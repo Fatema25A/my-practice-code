@@ -59,3 +59,62 @@ int main()
 
 }
 
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    scanf("%d %d",&a,&b);
+    if(a>b)
+    {
+        printf("a greater than b");
+    }
+    if(a==b){printf("a is equal to b");}
+    else
+    {
+        printf("a is less than b");
+    }
+    return 0;
+
+}
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    scanf("%d %d",&a,&b);
+    if(a==b){printf("a is equal to b");}
+    else
+    {
+        if(a>b){printf("a is greater than b");}
+        else
+        {
+            printf("a is less than b");
+        }
+    }
+    return 0;
+}
+#include<stdio.h>
+int main()
+{
+    int year;
+    scanf("%d",&year);
+    if(year%400==0||(year%4==0&&year%100!=0)){printf("leap year");}
+    else {printf("not a leap year");}
+    return 0;
+}
+#include<stdio.h>
+int main()
+{
+   int a=5;
+   if(a){printf("lemon");}
+   else{printf("orange");}
+    return 0;
+}
+#include<stdio.h>
+int main()
+{
+  int a=150;
+  if(a>100){printf("Greater then 100");}
+  if(a<50){printf("less than 50");}
+  else{printf("Between 50 and 100");}
+    return 0;
+}
