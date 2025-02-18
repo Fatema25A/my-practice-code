@@ -221,3 +221,20 @@ int main()
        }
    }
    return 0;}
+   #include<stdio.h>
+int main()
+{
+    int w;
+    scanf("%d",&w);
+
+    if(w%2==0 && w!=2)
+    {
+        printf("Yes");
+    }
+    else
+    {
+        printf("no");
+    }
+    return 0;
+}
+
