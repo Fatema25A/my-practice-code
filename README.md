@@ -237,4 +237,71 @@ int main()
     }
     return 0;
 }
+#include<stdio.h>
+int main()
+{
+   long long a,b,k;
+   scanf("%ld %ld %ld",&a,&b,&k);
+   if(k>=a+b){printf(" 0 0\n");}
+   else if(k<=a){printf("%ld %ld\n",a-k,b);}
+   else {printf("%ld %ld \n",k-a,b-(k-a));}
 
+    return 0;
+}
+#include<stdio.h>
+int main()
+{
+    int sum=0,n;
+    scanf("%d",&n);
+    for(int i=1;i<n;i++)
+    {
+        if(i%2==0)
+        {sum+=i;
+
+        }
+
+    }
+    printf("%d",sum);
+    return 0;
+}
+#include<stdio.h>
+int main()
+{
+    int i=0;
+    while(1<2)
+    {
+        if(i>10)
+        {
+            break;
+        }
+        printf("%d\n",i);
+        i++;
+    }
+    return 0;
+}
+#include<stdio.h>
+int main()
+{
+    int i=0;
+    printf("Loop started\n");
+    while(0)
+    {
+        printf("%d\n",i);
+        i++;
+    }
+    printf("loop finished\n");
+    return 0;
+}
+#include<stdio.h>
+int main()
+{
+ for(int i=1;i<=100;i++)
+ {
+     if(i%10>1)
+     {
+         continue;
+     }
+     printf("%d\n",i);
+ }
+ return 0;
+}
