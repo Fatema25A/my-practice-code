@@ -305,3 +305,107 @@ int main()
  }
  return 0;
 }
+#include<stdio.h>
+int main()
+{
+    int tc=0,t,f,temp;
+    while(1)
+    {
+
+        scanf("%d %d",&t,&f);
+        if(t==0&&f==0)
+        {
+            break;
+        }
+        temp=t;
+        t=f;
+        f=temp;
+        printf("case %d:%d %d",++tc,t,f);
+    }
+
+ return 0;
+}
+#include<stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    long long sum=0;
+    int max=-1000000;
+    int min=1000000;
+
+    for(int i=0;i<n;i++)
+    {
+        int x;
+        scanf("%d",&x);
+        sum=sum+x;
+        if(x<min)
+        {
+            min=x;
+        }
+        if(x>max)
+        {
+            max=x;
+        }
+    }
+printf("maximum:%d\n",max);
+printf("minimum:%d\n",min);
+printf("summation:%d",sum);
+ return 0;
+}
+#include<stdio.h>
+int main()
+{
+    int n,sum=0;
+    scanf("%d",&n);
+    while(n!=0)
+    {
+        int lastnum=n%10;
+        n/=10;
+
+        sum=sum+lastnum;
+
+    }
+    printf("%d",sum);
+ return 0;
+}
+#include<stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int sum=0;
+    while(n>0)
+    {
+        int lastdigit=n%10;
+        n/=10;
+        sum+=lastdigit;
+    }
+    printf("%d\n",sum);
+ return 0;
+}
+#include<stdio.h>
+int main()
+{
+   int t;
+   scanf("%d",&t);
+   while(t--){
+   int x,p;
+   scanf("%d %d",&x,&p);
+   int a=p/100;
+   if(p%100!=0)
+   {
+       a++;
+   }
+   if(x>=a)
+   {
+       printf("0\n");
+
+   }
+   else
+   {
+       int required=a-x;
+       printf("%d\n",required);
+   }}
+ return 0;
+}
